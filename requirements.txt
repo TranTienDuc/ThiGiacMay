@@ -2,4 +2,4 @@ joblib
 ultralytics
 streamlit
 numpy
-opencv-python-headless
+opencv-contrib-python-headless
