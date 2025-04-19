@@ -1,7 +1,7 @@
 import streamlit as st
+import joblib
 import numpy as np
 import cv2 as cv
-import joblib
 
 st.subheader('Nhận dạng khuôn mặt')
 FRAME_WINDOW = st.image([])
