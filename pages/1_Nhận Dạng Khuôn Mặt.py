@@ -30,7 +30,7 @@ if st.session_state.stop == True:
     FRAME_WINDOW.image(st.session_state.frame_stop, channels='BGR')
 
 file = open('svc.pkl', 'rb')
-svc = pickle.load('svc.pkl')
+svc = pickle.load(file)
 file.close()
 
 mydict = ['BanKien', 'BanTien', 'ThayDuc']
