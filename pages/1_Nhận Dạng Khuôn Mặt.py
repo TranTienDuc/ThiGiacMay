@@ -1,5 +1,5 @@
 import streamlit as st
-import joblib
+import pickle
 import numpy as np
 import cv2 as cv
 
@@ -29,8 +29,10 @@ if 'frame_stop' not in st.session_state:
 if st.session_state.stop == True:
     FRAME_WINDOW.image(st.session_state.frame_stop, channels='BGR')
 
+file = open('svc.pkl', 'rb')
+svc = pickle.load('svc.pkl')
+file.close()
 
-svc = joblib.load('svc.pkl')
 mydict = ['BanKien', 'BanTien', 'ThayDuc']
 
 def visualize(input, faces, fps, thickness=2):
