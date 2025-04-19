@@ -1,5 +1,3 @@
-joblib
-ultralytics
 streamlit
 numpy
-opencv-contrib-python-headless
+opencv-python-headless
